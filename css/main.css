@@ -1,0 +1,219 @@
+/*=======================================================
+                reset default setting
+=======================================================*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Remove all animations and transitions for people that prefer not to see them */
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=======================================================
+                        variables
+=======================================================*/
+/*=======================================================
+                        header
+=======================================================*/
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*=======================================================
+                        pages-tab
+=======================================================*/
+#pages-tab .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
+}
+#pages-tab .corporate-wellness {
+  min-height: 918px;
+  width: 100%;
+  background-image: url("../images/corporate.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+#pages-tab .member-login {
+  min-height: 918px;
+  width: 100%;
+  background-image: url("../images/marketplace.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+#pages-tab .event-consultancy {
+  min-height: 512px;
+  width: 100%;
+  background-image: url("../images/event-consultancy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
+          clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
+  margin-top: -350px;
+}
+
+/*===============================================
+                    footer
+===============================================*/
+#footer {
+  position: relative;
+  z-index: 9999;
+  padding-top: 65px;
+  background-color: #ffffff;
+}
+#footer .container {
+  border-bottom: 1px solid #272727;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#footer .container .info {
+  width: 365px;
+  margin-right: 35px;
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  #footer .container .info {
+    width: 100%;
+    margin-right: 0;
+  }
+  #footer .container .info img {
+    margin: auto;
+  }
+}
+#footer .container .info img {
+  width: 100%;
+  max-width: 189px;
+  margin-bottom: 21px;
+}
+#footer .container .info p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 11px;
+  color: #272727;
+}
+@media screen and (max-width: 991px) {
+  #footer .container .info p {
+    line-height: 22px;
+  }
+}
+#footer .container .links {
+  width: 172px;
+  margin-right: 80px;
+  color: #272727;
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 1140px) {
+  #footer .container .links {
+    margin-right: 20px;
+  }
+}
+#footer .container .links p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 34px;
+  color: #272727;
+}
+#footer .container .links button, #footer .container .links a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #272727;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#footer .container .links button:hover, #footer .container .links a:hover {
+  opacity: .8;
+}
+#footer .container .links:nth-last-child(1) {
+  margin-right: 0;
+}
+#footer .copyright {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 30px 15px;
+  color: #272727;
+  text-align: center;
+}
