@@ -3,9 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+    <title>Our Services</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -19,10 +23,69 @@
         <main id="main">
             <section id="pages-tab">
                 <div class="grid">
-                    <div class="corporate-wellness"></div>
-                    <div class="member-login"></div>
+                    <div class="member-login overlay">
+                        <div class="section-header">
+                            <div class="section-title">
+                                <img src="./images/icon/Arrow-Left.png" alt="">
+                                <p class="section-name">Market place</p>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <img src="./images/mockup-02.png" class="mockup" alt="">
+                            <div class="section-content-box">
+                                <h2 class="title">Fitness Movement</h2>
+                                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+                                <a href="#" class="btn-more">Explore 
+                                    <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.7071 8.70711C11.0976 8.31658 11.0976 7.68342 10.7071 7.29289L4.34315 0.928932C3.95262 0.538408 3.31946 0.538408 2.92893 0.928932C2.53841 1.31946 2.53841 1.95262 2.92893 2.34315L8.58579 8L2.92893 13.6569C2.53841 14.0474 2.53841 14.6805 2.92893 15.0711C3.31946 15.4616 3.95262 15.4616 4.34315 15.0711L10.7071 8.70711ZM0 9H10V7H0V9Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="./images/Logo-Arrow-Left.png" class="nav-icon" alt="">
+                    </div>
+                    <div class="corporate-wellness overlay">
+                        <div class="section-header">
+                            <div class="section-title">
+                                <p class="section-name">Corporate Wellness</p>
+                                <img src="./images/icon/Arrow-Right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <img src="./images/mockup-01.png" class="mockup" alt="">
+                            <div class="section-content-box">
+                                <h2 class="title">Corporate Solution</h2>
+                                <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+                                <a href="#" class="btn-more">Inspire Movement 
+                                    <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.7071 8.70711C11.0976 8.31658 11.0976 7.68342 10.7071 7.29289L4.34315 0.928932C3.95262 0.538408 3.31946 0.538408 2.92893 0.928932C2.53841 1.31946 2.53841 1.95262 2.92893 2.34315L8.58579 8L2.92893 13.6569C2.53841 14.0474 2.53841 14.6805 2.92893 15.0711C3.31946 15.4616 3.95262 15.4616 4.34315 15.0711L10.7071 8.70711ZM0 9H10V7H0V9Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="./images/Logo-Arrow-Right.png" class="nav-icon" alt="">
+                    </div>
                 </div>
-                <div class="event-consultancy"></div>
+                <div class="event-consultancy overlay">
+                    <img src="./images/Logo-Arrow-Down.png" class="nav-icon" alt="">
+                    <div class="content-box">
+                        <div class="section-content-box">
+                            <h2 class="title">Event Consultancy</h2>
+                            <p class="desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+                            <a href="#" class="btn-more">See Details 
+                                <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.7071 8.70711C11.0976 8.31658 11.0976 7.68342 10.7071 7.29289L4.34315 0.928932C3.95262 0.538408 3.31946 0.538408 2.92893 0.928932C2.53841 1.31946 2.53841 1.95262 2.92893 2.34315L8.58579 8L2.92893 13.6569C2.53841 14.0474 2.53841 14.6805 2.92893 15.0711C3.31946 15.4616 3.95262 15.4616 4.34315 15.0711L10.7071 8.70711ZM0 9H10V7H0V9Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section-header">
+                        <div class="section-title">
+                            <p class="section-name">Event Consultancy</p>
+                            <img src="./images/icon/Arrow-down.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -88,6 +151,7 @@
         </footer>
     </div>
 
+    <script src="./lib/jquery/jquery-3.5.1.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

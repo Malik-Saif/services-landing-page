@@ -85,42 +85,294 @@ a {
 /*=======================================================
                         pages-tab
 =======================================================*/
-#pages-tab .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 21px;
-          column-gap: 21px;
+#pages-tab {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#pages-tab .corporate-wellness {
-  min-height: 918px;
-  width: 100%;
-  background-image: url("../images/corporate.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-}
-#pages-tab .member-login {
-  min-height: 918px;
-  width: 100%;
-  background-image: url("../images/marketplace.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
-}
-#pages-tab .event-consultancy {
-  min-height: 512px;
-  width: 100%;
-  background-image: url("../images/event-consultancy.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
-          clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
-  margin-top: -350px;
+@media screen and (min-width: 1050px) {
+  #pages-tab .content-box {
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    visibility: visible;
+    position: relative;
+  }
+  #pages-tab .section-header {
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  }
+  #pages-tab .section-title {
+    width: 156px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #pages-tab .section-title .section-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #690FAD;
+    margin: 0;
+  }
+  #pages-tab .section-content-box .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    margin-bottom: 17px;
+    color: #690FAD;
+  }
+  #pages-tab .section-content-box .desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    margin-bottom: 41px;
+  }
+  #pages-tab .section-content-box .btn-more {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #690FAD;
+    border-radius: 30px;
+  }
+  #pages-tab .section-content-box .btn-more svg, #pages-tab .section-content-box .btn-more img {
+    margin-left: 15px;
+  }
+  #pages-tab .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 21px;
+            column-gap: 21px;
+  }
+  #pages-tab .member-login {
+    min-height: 918px;
+    width: 100%;
+    background-color: #F3E5E5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    position: relative;
+  }
+  #pages-tab .member-login .content-box, #pages-tab .member-login .section-header {
+    margin-left: auto;
+    margin-top: 60px;
+    margin-right: 50px;
+  }
+  #pages-tab .member-login .section-title {
+    margin-right: auto;
+  }
+  #pages-tab .member-login .section-title img {
+    margin-right: 9px;
+  }
+  #pages-tab .member-login .section-title .section-name {
+    text-align: left;
+  }
+  #pages-tab .member-login .mockup {
+    max-width: 543px;
+    margin-left: auto;
+    margin-top: 45px;
+  }
+  #pages-tab .member-login .section-content-box {
+    max-width: 358px;
+    margin-right: auto;
+  }
+  #pages-tab .member-login .section-content-box .title {
+    text-align: left;
+  }
+  #pages-tab .member-login .section-content-box .desc {
+    text-align: left;
+  }
+  #pages-tab .member-login .section-content-box .btn-more {
+    padding: 13px 51px;
+    margin-right: auto;
+  }
+  #pages-tab .member-login .nav-icon {
+    position: absolute;
+    right: 0;
+    top: 58%;
+    bottom: 50%;
+    -webkit-transform: translateY(-56%);
+            transform: translateY(-56%);
+    cursor: pointer;
+  }
+  #pages-tab .corporate-wellness {
+    min-height: 918px;
+    width: 100%;
+    background-color: #EFE9E9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+    position: relative;
+  }
+  #pages-tab .corporate-wellness .content-box, #pages-tab .corporate-wellness .section-header {
+    margin-right: auto;
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+  #pages-tab .corporate-wellness .section-title {
+    margin-left: auto;
+  }
+  #pages-tab .corporate-wellness .section-title img {
+    margin-left: 9px;
+  }
+  #pages-tab .corporate-wellness .section-title .section-name {
+    text-align: right;
+  }
+  #pages-tab .corporate-wellness .mockup {
+    max-width: 424px;
+    margin-right: auto;
+    margin-top: 45px;
+  }
+  #pages-tab .corporate-wellness .section-content-box {
+    max-width: 358px;
+    margin-left: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  #pages-tab .corporate-wellness .section-content-box .title {
+    text-align: right;
+  }
+  #pages-tab .corporate-wellness .section-content-box .desc {
+    text-align: right;
+  }
+  #pages-tab .corporate-wellness .section-content-box .btn-more {
+    padding: 13px 27px;
+  }
+  #pages-tab .corporate-wellness .nav-icon {
+    position: absolute;
+    left: 0;
+    top: 58%;
+    bottom: 50%;
+    -webkit-transform: translateY(-56%);
+            transform: translateY(-56%);
+    cursor: pointer;
+  }
+  #pages-tab .event-consultancy {
+    min-height: 512px;
+    width: 100%;
+    background-color: #EFEFEF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
+            clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
+    margin-top: -350px;
+    position: relative;
+  }
+  #pages-tab .event-consultancy .content-box {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 130px;
+    text-align: center;
+  }
+  #pages-tab .event-consultancy .section-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #pages-tab .event-consultancy .section-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  #pages-tab .event-consultancy .section-title img {
+    margin-top: 9px;
+  }
+  #pages-tab .event-consultancy .section-title .section-name {
+    text-align: center;
+  }
+  #pages-tab .event-consultancy .section-content-box {
+    max-width: 358px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 21px;
+  }
+  #pages-tab .event-consultancy .section-content-box .title {
+    text-align: center;
+  }
+  #pages-tab .event-consultancy .section-content-box .desc {
+    text-align: center;
+  }
+  #pages-tab .event-consultancy .section-content-box .btn-more {
+    padding: 13px 33px;
+  }
+  #pages-tab .event-consultancy .nav-icon {
+    position: absolute;
+    top: 29px;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translateX(-51%);
+            transform: translateX(-51%);
+    cursor: pointer;
+  }
+  #pages-tab .event-consultancy::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  #pages-tab .opacity::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 11111;
+  }
+  #pages-tab .opacity .content-box {
+    visibility: hidden;
+  }
+  #pages-tab .overlay .content-box {
+    visibility: hidden;
+  }
+  #pages-tab .overlay.member-login {
+    background-image: url("../images/marketplace.png");
+  }
+  #pages-tab .overlay.corporate-wellness {
+    background-image: url("../images/corporate.png");
+  }
+  #pages-tab .overlay.event-consultancy {
+    background-image: url("../images/event-consultancy.png");
+  }
 }
 
 /*===============================================

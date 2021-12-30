@@ -19,40 +19,283 @@
                         pages-tab
 =======================================================*/
 #pages-tab {
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 21px;
-    }
-    .corporate-wellness{
-        min-height: 918px;
-        width: 100%;
-        background-image: url("../images/corporate.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        // clip-path: polygon(0 0, 50% 0, 50% 54%, 0 87%);
-        clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-    }
-    .member-login{
-        min-height: 918px;
-        width: 100%;
-        background-image: url("../images/marketplace.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
-    }
-    .event-consultancy{
-        min-height: 512px;
-        width: 100%;
-        background-image: url("../images/event-consultancy.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        // clip-path: polygon(50% 60%, 0 100%, 100% 100%);
-        clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
-        margin-top: -350px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1050px) {
+        .content-box{
+            max-width: 600px;
+            padding-left: 15px;
+            padding-right: 15px;
+            visibility: visible;
+            position: relative;
+        }
+        .section-header{
+            max-width: 600px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+        }
+        .section-title{
+            width: 156px;
+            display: flex;
+            align-items: center;
+            .section-name{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $primaryColor;
+                margin: 0;
+            }
+        }
+        .section-content-box{
+            .title{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0em;
+                margin-bottom: 17px;
+                color: $primaryColor;
+            }
+            .desc{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0em;
+                margin-bottom: 41px;
+            }
+            .btn-more{
+                display: inline-flex;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $colorWhite;
+                background-color: $primaryColor;
+                border-radius: 30px;
+                svg,img{
+                    margin-left: 15px;
+                }
+            }
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 21px;
+        }
+        .member-login{
+            min-height: 918px;
+            width: 100%;
+            // background-image: url("../images/marketplace.png");
+            background-color: #F3E5E5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            // clip-path: polygon(0 0, 50% 0, 50% 54%, 0 87%);
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+            position: relative;
+            .content-box,.section-header{
+                margin-left: auto;
+                margin-top: 60px;
+                margin-right: 50px;
+            }
+            .section-title{
+                margin-right: auto;
+                img{
+                    margin-right: 9px;
+                }
+                .section-name{
+                    text-align: left;
+                }
+            }
+            .mockup{
+                max-width: 543px;
+                margin-left: auto;
+                margin-top: 45px;
+            }
+            .section-content-box{
+                max-width: 358px;
+                margin-right: auto;
+                .title{
+                    text-align: left;
+                }
+                .desc{
+                    text-align: left;
+                }
+                .btn-more{
+                    padding: 13px 51px;
+                    margin-right: auto;
+                }
+            }
+            .nav-icon{
+                position: absolute;
+                right: 0;
+                top: 58%;
+                bottom: 50%;
+                transform: translateY(-56%);
+                cursor: pointer;
+            }
+        }
+        .corporate-wellness{
+            min-height: 918px;
+            width: 100%;
+            // background-image: url("../images/corporate.png");
+            background-color: #EFE9E9;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+            position: relative;
+            .content-box,.section-header{
+                margin-right: auto;
+                margin-top: 60px;
+                margin-left: 50px;
+            }
+            .section-title{
+                margin-left: auto;
+                img{
+                    margin-left: 9px;
+                }
+                .section-name{
+                    text-align: right;
+                }
+            }
+            .mockup{
+                max-width: 424px;
+                margin-right: auto;
+                margin-top: 45px;
+            }
+            .section-content-box{
+                max-width: 358px;
+                margin-left: auto;
+                align-items: end;
+                .title{
+                    text-align: right;
+                }
+                .desc{
+                    text-align: right;
+                }
+                .btn-more{
+                    padding: 13px 27px;
+                }
+            }
+            .nav-icon{
+                position: absolute;
+                left: 0;
+                top: 58%;
+                bottom: 50%;
+                transform: translateY(-56%);
+                cursor: pointer;
+            }
+        }
+        .event-consultancy{
+            min-height: 512px;
+            width: 100%;
+            // background-image: url("../images/event-consultancy.png");
+            background-color: #EFEFEF;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            // clip-path: polygon(50% 60%, 0 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 100% 73%, 100% 100%, 0 100%, 0 73%);
+            margin-top: -350px;
+            position: relative;
+            .content-box{
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 130px;
+                text-align: center;
+            }
+            .section-header{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                padding-bottom: 15px;
+            }
+            .section-title{
+                flex-direction: column;
+                margin: auto;
+                img{
+                    margin-top: 9px;
+                }
+                .section-name{
+                    text-align: center;
+                }
+            }
+            .section-content-box{
+                max-width: 358px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 21px;
+                .title{
+                    text-align: center;
+                }
+                .desc{
+                    text-align: center;
+                }
+                .btn-more{
+                    padding: 13px 33px;
+                }
+            }
+            .nav-icon{
+                position: absolute;
+                top: 29px;
+                left: 50%;
+                right: 50%;
+                transform: translateX(-51%);
+                cursor: pointer;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba($color: $colorWhite, $alpha: .2);
+            }
+        }
+        .opacity{
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba($color: $colorWhite, $alpha: .7);
+                z-index: 11111;
+            }
+            .content-box{
+                visibility: hidden;
+            }
+        }
+        .overlay{
+            .content-box{
+                visibility: hidden;
+            }
+        }
+        .overlay.member-login{
+            background-image: url("../images/marketplace.png");
+        }
+        .overlay.corporate-wellness{
+            background-image: url("../images/corporate.png");
+        }
+        .overlay.event-consultancy{
+            background-image: url("../images/event-consultancy.png");
+        }
     }
 }
 
