@@ -5,3 +5,9 @@ $(document).ready(function () {
         $(this).removeClass("opacity");
     });
 });
+$(document).ready(function () {
+    $(".member-login, .corporate-wellness, .event-consultancy").click(function () {
+        $(".member-login, .corporate-wellness, .event-consultancy").removeClass("active");
+        $(this).addClass("active");
+    });
+});

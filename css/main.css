@@ -91,6 +91,9 @@ a {
   margin-right: auto;
 }
 @media screen and (min-width: 1050px) {
+  #pages-tab .btn-sm {
+    display: none;
+  }
   #pages-tab .content-box {
     max-width: 600px;
     padding-left: 15px;
@@ -338,15 +341,7 @@ a {
     -webkit-transform: translateX(-51%);
             transform: translateX(-51%);
     cursor: pointer;
-  }
-  #pages-tab .event-consultancy::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
   }
   #pages-tab .opacity::before {
     position: absolute;
@@ -372,6 +367,518 @@ a {
   }
   #pages-tab .overlay.event-consultancy {
     background-image: url("../images/event-consultancy.png");
+  }
+}
+@media (max-width: 1049px) {
+  #pages-tab .content-box {
+    max-width: 304px;
+    padding-left: 15px;
+    padding-right: 15px;
+    visibility: visible;
+    position: relative;
+  }
+  #pages-tab .section-header {
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin-right: auto;
+  }
+  #pages-tab .section-title {
+    width: 74px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding-left: 39px;
+    padding-bottom: 36px;
+  }
+  #pages-tab .section-title::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/icon/Arrow-Left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+    width: 32px;
+    height: 47px;
+    left: 0;
+    right: 0;
+  }
+  #pages-tab .section-title img {
+    display: none;
+  }
+  #pages-tab .section-title .section-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #690FAD;
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  #pages-tab .mockup {
+    display: none;
+  }
+  #pages-tab .section-content-box .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 9px;
+    color: #690FAD;
+  }
+  #pages-tab .section-content-box .desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  #pages-tab .section-content-box .btn-lg {
+    display: none;
+  }
+  #pages-tab .section-content-box .btn-sm {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #690FAD;
+    border-radius: 30px;
+    padding: 7px 29px;
+  }
+  #pages-tab .section-content-box .btn-sm svg, #pages-tab .section-content-box .btn-sm img {
+    margin-left: 8px;
+  }
+  #pages-tab .member-login,
+  #pages-tab .corporate-wellness,
+  #pages-tab .event-consultancy {
+    padding: 22px 3px 29px;
+    overflow: hidden;
+    opacity: .45;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  #pages-tab .member-login {
+    width: 100%;
+    position: relative;
+    background-color: #F3E5E5;
+  }
+  #pages-tab .member-login::before {
+    content: "";
+    position: absolute;
+    right: 12%;
+    top: -100%;
+    bottom: -100%;
+    width: 60px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #pages-tab .member-login::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+    background-image: url("../images/mockup-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  #pages-tab .corporate-wellness {
+    width: 100%;
+    position: relative;
+    background-color: #EFE9E9;
+  }
+  #pages-tab .corporate-wellness::before {
+    content: "";
+    position: absolute;
+    right: 12%;
+    top: -100%;
+    bottom: -100%;
+    width: 60px;
+    background-color: #fff;
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  #pages-tab .corporate-wellness::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+    background-image: url("../images/mockup-02.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  #pages-tab .event-consultancy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    background-color: #EFEFEF;
+    position: relative;
+  }
+  #pages-tab .event-consultancy::before {
+    content: "";
+    position: absolute;
+    right: 12%;
+    top: -100%;
+    bottom: -100%;
+    width: 60px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #pages-tab .event-consultancy::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+  }
+  #pages-tab .nav-icon {
+    display: none;
+  }
+  #pages-tab .active {
+    padding: 22px 3px 29px;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-filter: unset;
+            filter: unset;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  #pages-tab .active.member-login .desc,
+  #pages-tab .active.corporate-wellness .desc,
+  #pages-tab .active.event-consultancy .desc {
+    font-size: 14px;
+    line-height: 18.63px;
+  }
+  #pages-tab .active.member-login .section-content-box,
+  #pages-tab .active.corporate-wellness .section-content-box,
+  #pages-tab .active.event-consultancy .section-content-box {
+    padding-top: 38px;
+    padding-bottom: 66px;
+  }
+  #pages-tab .active.member-login::before,
+  #pages-tab .active.corporate-wellness::before,
+  #pages-tab .active.event-consultancy::before {
+    width: 1px;
+    right: 32%;
+  }
+  #pages-tab .active.member-login::after,
+  #pages-tab .active.corporate-wellness::after,
+  #pages-tab .active.event-consultancy::after {
+    right: 5px;
+    background-position: left 80%;
+  }
+  #pages-tab .active.member-login::before {
+    -webkit-transform: rotate(26deg);
+            transform: rotate(26deg);
+  }
+  #pages-tab .active.corporate-wellness::before {
+    -webkit-transform: rotate(334deg);
+            transform: rotate(334deg);
+  }
+  #pages-tab .active.event-consultancy {
+    background-image: url("../images/event-consultancy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #pages-tab .active.event-consultancy::before {
+    width: 0;
+    -webkit-transform: rotate(26deg);
+            transform: rotate(26deg);
+  }
+}
+@media (max-width: 480px) {
+  #pages-tab .content-box {
+    max-width: 204px;
+    padding-left: 15px;
+    padding-right: 15px;
+    visibility: visible;
+    position: relative;
+  }
+  #pages-tab .section-header {
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin-right: auto;
+  }
+  #pages-tab .section-title {
+    width: 74px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding-left: 29px;
+    padding-bottom: 26px;
+  }
+  #pages-tab .section-title::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/icon/Arrow-Left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+    width: 22px;
+    height: 37px;
+    left: 0;
+    right: 0;
+  }
+  #pages-tab .section-title img {
+    display: none;
+  }
+  #pages-tab .section-title .section-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #690FAD;
+    margin: 0;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  #pages-tab .mockup {
+    display: none;
+  }
+  #pages-tab .section-content-box .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 9px;
+    color: #690FAD;
+  }
+  #pages-tab .section-content-box .desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  #pages-tab .section-content-box .btn-lg {
+    display: none;
+  }
+  #pages-tab .section-content-box .btn-sm {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    background-color: #690FAD;
+    border-radius: 30px;
+    padding: 7px 29px;
+  }
+  #pages-tab .section-content-box .btn-sm svg, #pages-tab .section-content-box .btn-sm img {
+    margin-left: 8px;
+  }
+  #pages-tab .member-login,
+  #pages-tab .corporate-wellness,
+  #pages-tab .event-consultancy {
+    padding: 22px 3px 29px;
+    overflow: hidden;
+    opacity: .45;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+  }
+  #pages-tab .member-login {
+    width: 100%;
+    position: relative;
+    background-color: #F3E5E5;
+  }
+  #pages-tab .member-login::before {
+    content: "";
+    position: absolute;
+    right: 12%;
+    top: -100%;
+    bottom: -100%;
+    width: 60px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #pages-tab .member-login::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+    background-image: url("../images/mockup-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  #pages-tab .corporate-wellness {
+    width: 100%;
+    position: relative;
+    background-color: #EFE9E9;
+  }
+  #pages-tab .corporate-wellness::before {
+    content: "";
+    position: absolute;
+    right: 12%;
+    top: -100%;
+    bottom: -100%;
+    width: 60px;
+    background-color: #fff;
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  #pages-tab .corporate-wellness::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+    background-image: url("../images/mockup-02.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  #pages-tab .event-consultancy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    background-color: #EFEFEF;
+    position: relative;
+  }
+  #pages-tab .event-consultancy::before {
+    content: "";
+    position: absolute;
+    right: 12%;
+    top: -100%;
+    bottom: -100%;
+    width: 60px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #pages-tab .event-consultancy::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+    bottom: 0;
+    width: 42%;
+  }
+  #pages-tab .nav-icon {
+    display: none;
+  }
+  #pages-tab .active {
+    padding: 22px 3px 29px;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-filter: unset;
+            filter: unset;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  #pages-tab .active.member-login .desc,
+  #pages-tab .active.corporate-wellness .desc,
+  #pages-tab .active.event-consultancy .desc {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+  #pages-tab .active.member-login .section-content-box,
+  #pages-tab .active.corporate-wellness .section-content-box,
+  #pages-tab .active.event-consultancy .section-content-box {
+    padding-top: 38px;
+    padding-bottom: 66px;
+  }
+  #pages-tab .active.member-login::before,
+  #pages-tab .active.corporate-wellness::before,
+  #pages-tab .active.event-consultancy::before {
+    width: 1px;
+    right: 32%;
+  }
+  #pages-tab .active.member-login::after,
+  #pages-tab .active.corporate-wellness::after,
+  #pages-tab .active.event-consultancy::after {
+    right: 5px;
+    background-position: left 80%;
+  }
+  #pages-tab .active.member-login::before {
+    -webkit-transform: rotate(26deg);
+            transform: rotate(26deg);
+  }
+  #pages-tab .active.corporate-wellness::before {
+    -webkit-transform: rotate(334deg);
+            transform: rotate(334deg);
+  }
+  #pages-tab .active.event-consultancy {
+    background-image: url("../images/event-consultancy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #pages-tab .active.event-consultancy::before {
+    width: 0;
+    -webkit-transform: rotate(26deg);
+            transform: rotate(26deg);
   }
 }
 
